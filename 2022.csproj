@@ -104,5 +104,8 @@
   <ItemGroup>
     <None Include="bin\Debug\res\Wood\Wood1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\Wood\Wood2.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

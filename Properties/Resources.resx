@@ -127,10 +127,13 @@
   <data name="Back4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\res\Background\Back4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Wood1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\res\Wood\Wood1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Back5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\res\Background\Back5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Wood1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\res\Wood\Wood1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Wood2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\res\Wood\Wood2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
