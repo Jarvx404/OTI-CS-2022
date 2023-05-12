@@ -44,6 +44,7 @@
             this.loadBtn = new System.Windows.Forms.Button();
             this.gameBox = new System.Windows.Forms.PictureBox();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
+            this.stopBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.defPb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameBox)).BeginInit();
@@ -53,6 +54,7 @@
             // 
             this.panel1.BackgroundImage = global::_2022.Properties.Resources.Wood1;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.stopBtn);
             this.panel1.Controls.Add(this.svBtn);
             this.panel1.Controls.Add(this.restartBtn);
             this.panel1.Controls.Add(this.startBtn);
@@ -72,16 +74,17 @@
             // 
             // svBtn
             // 
-            this.svBtn.Location = new System.Drawing.Point(43, 669);
+            this.svBtn.Location = new System.Drawing.Point(43, 698);
             this.svBtn.Name = "svBtn";
             this.svBtn.Size = new System.Drawing.Size(161, 23);
             this.svBtn.TabIndex = 12;
             this.svBtn.Text = "Salveaza JPG";
             this.svBtn.UseVisualStyleBackColor = true;
+            this.svBtn.Click += new System.EventHandler(this.svBtn_Click);
             // 
             // restartBtn
             // 
-            this.restartBtn.Location = new System.Drawing.Point(43, 631);
+            this.restartBtn.Location = new System.Drawing.Point(43, 661);
             this.restartBtn.Name = "restartBtn";
             this.restartBtn.Size = new System.Drawing.Size(161, 32);
             this.restartBtn.TabIndex = 11;
@@ -96,6 +99,7 @@
             this.startBtn.TabIndex = 10;
             this.startBtn.Text = "Start";
             this.startBtn.UseVisualStyleBackColor = true;
+            this.startBtn.Click += new System.EventHandler(this.startBtn_Click);
             // 
             // plaLabel
             // 
@@ -135,6 +139,7 @@
             this.curBtn.TabIndex = 6;
             this.curBtn.Text = "Curata tot";
             this.curBtn.UseVisualStyleBackColor = true;
+            this.curBtn.Click += new System.EventHandler(this.curBtn_Click);
             // 
             // rotBtn
             // 
@@ -182,6 +187,7 @@
             this.loadBtn.TabIndex = 1;
             this.loadBtn.Text = "Incarca Harta";
             this.loadBtn.UseVisualStyleBackColor = true;
+            this.loadBtn.Click += new System.EventHandler(this.loadBtn_Click);
             // 
             // gameBox
             // 
@@ -194,7 +200,18 @@
             // 
             // gameTimer
             // 
+            this.gameTimer.Interval = 200;
             this.gameTimer.Tick += new System.EventHandler(this.gameTick);
+            // 
+            // stopBtn
+            // 
+            this.stopBtn.Location = new System.Drawing.Point(43, 631);
+            this.stopBtn.Name = "stopBtn";
+            this.stopBtn.Size = new System.Drawing.Size(161, 24);
+            this.stopBtn.TabIndex = 13;
+            this.stopBtn.Text = "Stop";
+            this.stopBtn.UseVisualStyleBackColor = true;
+            this.stopBtn.Click += new System.EventHandler(this.stopBtn_Click);
             // 
             // InterferenteECO
             // 
@@ -231,5 +248,6 @@
         private System.Windows.Forms.Label harLabel;
         private System.Windows.Forms.Button svBtn;
         private System.Windows.Forms.Timer gameTimer;
+        private System.Windows.Forms.Button stopBtn;
     }
 }
